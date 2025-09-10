@@ -1,11 +1,11 @@
-apiVersion: backstage.io/v1alpha1
+apiVersion: backstage.io/v1beta1
 kind: Component
 metadata:
-  name: roadie-backstage
-  namespace: auto-scan
-  annotations:
-    github.com/project-slug: 'syed-672/sample-nodejs'
+  name: shopping-cart
 spec:
   type: service
   lifecycle: production
-  owner: span@example.com
+  owner: team-shopping
+  dependsOn:
+    - component: auth-service
+    - resource: user-database
