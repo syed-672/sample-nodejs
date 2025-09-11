@@ -2,8 +2,6 @@ apiVersion: backstage.io/v1beta1
 kind: Component
 metadata:
   name: shopping-cart
-  annotations:
-    backstage.io/source-location: url:https://github.com/syed-672/sample-nodejs/blob/main/catalog-info.yaml
 spec:
   type: service
   lifecycle: production
